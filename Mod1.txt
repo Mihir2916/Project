@@ -1,0 +1,293 @@
+1)  List of count of each emp in the Department?
+
+
+2)  Select emp.empNo, emp.ename, dept.dname, from employees e join department d ON e.deptno=d.deptno; ----EQUIJOIN
+
+3)  sheetal wants to increase the sal by 10% for all employees in the organization?
+ans:	UPDATE EMP set sal=sal+(sal*.10);
+
+4)  Which of the following are the correct terms associated with VIEW?
+ans:    View can be used with Check Option
+	Can update all the tables on which it is based on some cases
+
+5)  Valid wrt foll statement
+	Select empno,sal from employee where sal=ANY(2000,4000,5000);
+
+ans: the query will return all the sal equivalent to (2000,4000,5000).
+
+
+
+
+NEXT Group of Questions
+
+
+
+
+6)  Display avgerage emp_sal for each department in the Company?
+ans: SELECT dept_code,AVG(emp_salary) from employee GroupBy dept_code;
+
+
+7)  Identify Join?
+	SELECT stud.rollno,stud.name,dept.name from stud,dept where stud.deptno=dept.deptno(+);
+ans:  Left Outer Join
+
+8)  Upadte Rahul sal= satish(id = 102), consider employee table 3 columns code,name,sal? 
+ans:  UPDATE employee SET sal=(SELECT sal from employee where id=102) where empname=Satish;
+
+
+
+9) Shyam is running query in RDBMS?for faster retrival of records ---- INDEX
+
+10) O/P 
+	SELECT empno,empname,hiredate from employee  where hiredate<(SELECT hiredate from Employees where 
+	empno = '002'); note empname=deepa and empno = 002?
+
+ans: display all employees before deepa(002) has joined
+
+
+
+OOPs and UML:::::
+
+
+1) True for Construcor:   
+	constructor could be a degfault and parametrasied
+	can be useful for 
+
+2) Use of UML::
+	to show application structure
+	to build detailed Specification of application
+	to capture the system behaviour
+
+3)  true about OOPs ::: 
+	Reuasbility of code
+	Data is Encapsulted
+
+4)  Revice the Notations of sequence diagram and Activity Diagram: 
+
+
+
+
+*****Display deptcode and max sal from thode dept where avg sal earned is > 8000?
+ans:  SELECT dept_code, Max(emp_sal) from emp GROUPBY dept_code HAVING AVG(emp_sal)>8000;
+
+
+******which statement will not delete any row from the table?
+delete from emp where 1=2;
+
+**************************WEBBASICS******************************
+
+1)  <input type="file" name="photo" ______>
+ans: accept="image";
+
+2)  navigation menu ----->  NAV()
+
+3) Style -----> STYLE
+
+4) valid email-id without null values?\
+ans: <input type="email",name="email", required>
+
+5) accept age in registration form (17<age>61)?
+ans: <input type="number" name="age" min=18 max=60> 
+
+6) create text field with focus on it when page is loaded and will insist the user to fill the field?
+ans: <input id="txtname" type="text" autofocus required>
+
+7) O/p:  
+	<body>
+	<form action="welcome.html>
+	<input name="uname" type="name" placeholder="Username"><br>
+	</form>
+	</body>
+ans: the form will show the textbox holding the text username in a lighter shade
+
+
+8)  create a link section which exist with a name secname in a form welcome.html ?
+ans: <ahref="#secname/welcome.html">code</a>
+
+9)  7 day tour package start from sunday and ends on saturday. can select any 7 days to book a particular ticket?
+ans: <input type="week">
+
+10)  wants to open a link which will open in new window?
+ans: target=_blank
+
+11)   List the items with bullets? <ul> style= _________  </ul>
+ans: <ul> 
+	{
+    list-style-image: url("pin.gif" as a value style attribute in a image);
+	}
+	</ul>
+
+12)  <callspan=n> can be added to which tag?
+ans: <td>
+
+13) used to display a logo of company in webpage?
+ans: <img src="logo.gif">
+
+14) information abt planet used to be posted in a newspaper webpage?
+ans: <article>
+
+15) correct css3 rule for ID selector?
+ans: #<P1>{color : red;  }
+
+16) background image sun.png is to be added in a webpage?
+ans: background-image:url("sun.png");
+
+17) universal selector----> *
+
+18) <p> tag lowercase
+ans: <p {text-transform : lowercase} >
+
+19)  correct css syntax?
+ans: <h1 {color : black; }
+
+
+20) correct selector type?
+	<style>
+	<h1 {color:blue; }>
+	</style> 
+ans: tag selector
+
+21) <style> <P { font-weight: gold ; } </style>
+ans: Embeded approach
+
+//22) which 
+    <input type="text"/>
+    <input type="radio"/>
+    <input typ="text"/>
+ans: <input [ type="text"]{color:red; }>
+
+
+
+23) alert ------ dialog box with single OK button
+    confirm----- dialog box with OK and Cancel
+    prompt------ dialog box with read and write capabilities with OK and Cancel button
+ 
+24) 2 dropdown boxes ---- interrelated city--->state? Javascript event
+ans: OnChange
+
+//**
+25) function fun {document.myform.myname.disabled=true }
+
+26) create cookie name "username" and stores the value "Rahul"?
+ans: document.cookie="username=Rahul"
+
+27) How to set a focus in a element ?
+ans: focus
+
+28) How to disable an html object?
+ans: disabled=true
+
+29) an xml schema describes ?
+	structure,grammer,vocabalory, datatype of xml 
+ans: all are true.
+
+//**
+30) rollno cannot be negative or 100?
+ans: access: integer
+
+31)  true for xml mandatory things ?
+	use="required"
+
+
+32) xml schema named bachelor.Element should only consist true or false?
+ans: type =boolean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
